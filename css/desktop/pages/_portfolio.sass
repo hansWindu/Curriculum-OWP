@@ -1,0 +1,77 @@
+.portfolio
+    background-color: #3f3b3b
+    height: auto
+    align-content: center
+    border-top: 1px rgba(0, 0, 0, 0.384) solid
+    &__ancho
+        max-width: 1200px
+        margin: auto
+        padding-bottom: 4rem
+        display: grid
+        grid-template-rows: repeat(4, auto)
+        grid-template-columns: repeat(1, auto)
+        grid-gap: 1rem 1rem
+    &__logo
+        grid-row: 1/2
+        grid-column: 1/4
+        margin: 2rem auto
+        font-size: 3rem
+        letter-spacing: .5rem
+        font-weight: 100
+        font-family: $font-primero
+        color: white
+    &__link
+        width: 24rem
+        height: 9rem
+        transition: .5s
+        box-shadow: 0px 0px 11px -1px #000000
+        margin: 0
+        display: flex
+        flex-direction: column
+    &__link:hover
+        transform: scale(1.1, 1.1)
+        box-shadow: none
+    /* Peraza */
+    .peraza
+        display: flex
+        justify-content: center
+        background: linear-gradient(130deg, $color-morado, $color-lightblue)
+        &__tittle
+            margin: auto
+        &__img
+            width: 12rem
+    /* Hezter */
+    .hezter
+        display: flex
+        justify-content: center
+        text-align: center
+        text-decoration: none
+        color: $color-morado-claro
+        background: linear-gradient(130deg, $color-morado, $color-lightblue)
+        &__tittle
+            font-family: $font-cinzel
+            font-size: 1.8rem
+            margin: auto
+        &__info
+            font-family: $font-primero
+            font-size: 1rem
+            margin: auto
+    @media screen and ( max-width: 1350px )
+        .portfolio__ancho
+            max-width: 850px
+        &__link
+            width: 17rem
+            height: 9rem
+    @media screen and ( max-width: 1024px )
+        .portfolio__ancho
+            display: flex
+            flex-direction: column
+            padding-bottom: 4rem
+        .portfolio__link
+            width: 40rem
+            margin: auto
+            margin-bottom: 2rem
+            height: 7rem
+        .portfolio__logo
+            margin: 2rem auto
+        

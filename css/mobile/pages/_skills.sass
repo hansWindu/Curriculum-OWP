@@ -1,0 +1,155 @@
+.skills
+    height: auto
+    display: flex
+    font-family: $font-primero
+    strong
+        font-weight: 550
+    .skills__ancho
+        margin: auto
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+        grid-template-rows: repeat(7, auto)
+        max-width: 900px
+        grid-gap: 2rem 0
+        padding-bottom: 1rem
+    .skills__description--2
+        grid-row: 1/2
+        grid-column: 1/2
+        background-color: $color-white--nuevo
+        height: 9rem
+        width: 9rem
+        border-radius: 100%
+        display: grid
+        grid-template-rows: 4rem 4rem
+        grid-template-columns: auto
+        text-align: center
+        align-content: center
+        box-shadow: 0px 0px 17px 0px #000000
+        margin: auto
+    /*Texto*/
+    .skills__logo
+        grid-row: 1/2
+        grid-column: 1/2
+        text-align: center
+        font-size: 3rem
+        margin: 0
+        margin-top: 4rem
+        letter-spacing: .5rem
+        font-weight: 300
+    .skills__text
+        margin: auto
+        grid-row: 1/2
+        padding: .5rem
+        font-weight: 500
+        width: 80%
+        font-size: 1.1rem
+    .skills__text--2
+        grid-row: 6/7
+        grid-column: 1/2
+        line-height: 1.7
+        text-align: justify
+        padding: 0 2rem
+    /*Burbujas*/
+    .skills__description--4
+        grid-row: 2/3
+        grid-column: 1/2
+        background-color: $color-white--nuevo
+        height: 14rem
+        width: 14rem
+        border-radius: 100%
+        display: grid
+        grid-template-rows: 4rem 4rem
+        grid-template-columns: auto
+        text-align: center
+        align-content: center
+        box-shadow: 0px 0px 17px 0px #000000
+        margin: auto
+    .word
+        margin: auto
+        font-size: 6rem
+        grid-row: 2/3
+        color: #0061b1
+    .skills__description--5
+        grid-row: 3/4
+        grid-column: 1/2
+        background-color: $color-white--nuevo
+        height: 14rem
+        width: 14rem
+        border-radius: 100%
+        display: grid
+        grid-template-rows: 4rem 4rem
+        grid-template-columns: auto
+        text-align: center
+        align-content: center
+        box-shadow: 0px 0px 17px 0px #000000
+        margin: auto
+    .sass
+        margin: auto
+        font-size: 6rem
+        grid-row: 2/3
+        color: #b10085
+    .skills__description--2
+        grid-row: 4/5
+        grid-column: 1/2
+        background-color: $color-white--nuevo
+        height: 14rem
+        width: 14rem
+        border-radius: 100%
+        display: grid
+        grid-template-rows: 4rem 4rem
+        grid-template-columns: auto
+        text-align: center
+        align-content: center
+        box-shadow: 0px 0px 17px 0px #000000
+        margin: auto
+    .note
+        margin: auto
+        font-size: 6rem
+        grid-row: 2/3
+        color: black
+    /*Barras*/
+    .skills__bars
+        width: 90%
+        max-width: 900px
+        padding: 0rem
+        grid-row: 5/6
+        grid-column: 1/2
+        margin: auto
+    .skill-name
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 20px 0
+    .skill-bar
+        height: 20px
+        background: #cacaca
+        border-radius: 8px
+    .skill-per
+        height: 20px
+        background-color: #0fbcf9
+        border-radius: 8px
+        width: 0
+        transition: 1s linear
+        position: relative
+    .skill-per::before
+        content: attr(per)
+        position: absolute
+        padding: 0
+        background-color: #000
+        color: #fff
+        font-size: 12px
+        border-radius: 4px
+        top: -20px
+        right: 0
+        transform: translateX(50%)
+    .skill-per::after
+        content: ''
+        position: absolute
+        width: 10px
+        height: 10px
+        background-color: #000
+        top: -7px
+        right: 0
+        transform: translateX(50%) rotate(45deg)
+        border-radius: 2px
+    
